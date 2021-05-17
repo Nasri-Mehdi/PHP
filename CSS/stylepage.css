@@ -1,0 +1,280 @@
+body{
+	font-family: Segoe UI ,Arial, sans-serif;
+	font-size: 1.0em;
+	color:#45974D;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+/*M E N U*/
+/*j'étire mon menu sur toute la largeur de l'écran et je done une couleur et je rajoute padding*/
+
+nav{	
+	top:130px;
+	position: fixed;
+	width: 100%;
+	background-color: #45974D;
+	z-index:+11;
+}
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+nav > ul > li {
+	float: left;	
+}
+/*j'enlève les puces de ma liste*/
+nav li{
+	list-style-type: none;
+}
+
+/*pour éviter l'écrasement des éléments du menu j'utilise CSS::after;*/
+
+nav > ul::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+/*style et couleurs*/
+nav a{
+	display: inline-block;
+	text-decoration: none;   /*enlever le soulignement*/
+}
+nav > ul > li > a{
+	padding: 15px 20px;
+	color: #FFF;
+}
+
+.menu-newusr{
+	float:right;
+	}
+	.menu-cnx{
+	float:right;
+	}
+/*rajouter bordure bleue au dessus des éléments du menu au survol et couleur*/
+
+.menu-home:hover{
+	border-top: 4px solid #FFB800;
+	background-color: RGBa(255, 184, 0, 0.15);
+}
+.menu-plantes:hover{
+	border-top: 4px solid #FF7500;
+	background-color: RGBa(255, 117, 0, 0.15);
+}
+.menu-plantesDyn:hover{
+	border-top: 4px solid #F8FF00;
+	background-color: RGBa(248, 255, 0, 0.10);
+}
+.menu-contact:hover{
+	border-top: 4px solid #00A7FF;
+	background-color: RGBa(0, 167, 255, 0.15);
+}
+.menu-cnx:hover{
+	border-top: 4px solid #B40486;
+	background-color: RGBa(180, 4, 134, 0.15);
+}
+.menu-newusr:hover{
+	border-top: 4px solid #2EFE2E;
+	background-color: RGBa(46, 254, 46, 0.15);
+	
+}
+
+.imagetab{
+	max-height:120px;
+	max-width:120px;  
+}
+
+
+/*********************************************************************************/
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table td, table th {
+	padding: 10px;
+	border: solid grey 1px;
+}
+
+
+
+
+#entete{
+	position:fixed;
+	top: 0;
+	padding:15px;
+	background-image:url('http://www.fondation-georges-truffaut.org/wp-content/themes/twentyeleven/img/banniere-responsive.jpg' );
+	/*background-color: #C0E8C4;*/
+	height: 110px;
+	width: 100%;
+	z-index:+10;
+	
+	
+}
+
+
+#entete h1{
+
+	float: right;
+	padding-left:115px;
+	padding-right: 20px;
+	color: white;
+	
+}
+/*#connexion{
+	margin-top:20px;
+	margin-left:30px;
+	float:left;
+}*/
+
+
+#formConnexion{
+	float:left;
+	margin-top:0px;
+	margin-left:30px;
+	color:white;
+}
+
+#erreurConnexion{
+	float:left;
+	margin-top:30px;
+	margin-left:20px;
+	color:red;
+}
+
+#cnx{
+	float:left;
+	margin-left: 40px;
+	margin-top:20px;
+	color:white;
+}
+
+
+#newusr{
+	float:left;
+	margin-left: 25px;
+	margin-top:20px;
+	color:white;
+}
+
+.corps {
+	
+	margin-left:180px;
+	margin-right:180px;
+	margin-top: 190px;
+	padding-left: 15px;
+	margin-bottom: 180px;
+}
+
+#logo img{
+	float:left;
+	height:100px;
+	width:100px;
+}
+
+#pied-de-page{
+	padding: 15px;
+	width: 100%;
+	height: 10%;
+	position: fixed;
+	bottom:0;
+	color: white;
+	background-color: #45974D;
+	font-size: 0.5em;
+	line-height: 0.5em;
+}
+
+#gauche{
+	float:left;
+	font-size:0.8em;
+	color: gray;
+	
+}
+
+#droite{
+	float:right;
+	color: gray;
+	font-size:0.8em;
+	
+	}
+
+
+
+#fenetreRajout {
+	position: relative;
+	color: #9bb99b;
+	float: left;
+	z-index:+2;
+	padding: 10px;
+	
+}
+#tableauRecherche{
+	margin-top:20px;
+	}
+
+@media screen and (max-width: 1024px) { /* On redéfinit les styles lorsque la largeur de l'écran est en dessous de 1024px */
+	.colMasque {
+		display:none;
+	}
+	
+	.corps {
+		margin-top: 190px;
+		margin-bottom: 180px;
+		margin-left:0px;
+		margin-right:0px;
+	}
+	
+	body{
+		font-family: Segoe UI ,Arial, sans-serif;
+		font-size: 0.7em;
+		color:#45974D;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.imagetab{
+		max-height:50px;
+		max-width:50px;  
+	}
+	
+	
+}
+
+/*
+	padding:15px;
+	border: solid gray 1px;
+	text-align:right;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
